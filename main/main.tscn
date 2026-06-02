@@ -2,13 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://danhkpjy5pcp5" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cmmpd63ruvaf3" path="res://platform.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://uystxjfhimus" path="res://goal.tscn" id="3_h2yge"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ig7tw"]
 
 [node name="Main" type="Node2D" unique_id=1460437862]
 
 [node name="Player" parent="." unique_id=910821996 instance=ExtResource("1_ig7tw")]
-position = Vector2(497, 300)
+position = Vector2(586, 337)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1100664319]
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1709502240]
 
@@ -17,4 +20,7 @@ position = Vector2(5, 486)
 shape = SubResource("WorldBoundaryShape2D_ig7tw")
 
 [node name="Platform" parent="Ground/CollisionShape2D" unique_id=1892346770 instance=ExtResource("2_0xm2m")]
-position = Vector2(389, -144)
+position = Vector2(388, -133)
+
+[node name="Goal" parent="." unique_id=1664654990 instance=ExtResource("3_h2yge")]
+position = Vector2(406, 277)
