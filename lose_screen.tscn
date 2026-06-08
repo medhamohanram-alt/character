@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c1bglj4vrtiah"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_deucp"]
+bg_color = Color(0.9529412, 0.6117647, 0.6862745, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbtnu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3ym8"]
+bg_color = Color(0.85612357, 0.4583133, 0.5577518, 1)
+
+[node name="LoseScreen" type="Control" unique_id=1197681376]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="." unique_id=1544122555]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 131.0
+offset_right = 680.0
+offset_bottom = 206.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_deucp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cbtnu")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_h3ym8")
+text = "PLAY AGAIN?"
+
+[node name="Label" type="Label" parent="." unique_id=2041322856]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 40.0
+offset_right = 656.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 47
+text = "YOU LOSE :("
